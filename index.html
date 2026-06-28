@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Doom Magitek</title>
+    <meta name="description" content="Doctor Doom Magitek simulator." />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Loading Screen -->
+      <div id="loading" class="overlay flex-center active">
+        <div class="loader"></div>
+        <h2>INITIALIZING DOOMBOT LINK...</h2>
+      </div>
+
+      <!-- Main UI -->
+      <main>
+        <div class="video-container" id="video-container">
+          <video id="webcam" autoplay playsinline></video>
+          <canvas id="output_canvas"></canvas>
+        </div>
+        
+        <div class="ui-panel glass">
+          <h1 class="title">DOOMSDAY</h1>
+          <p class="subtitle">Open Palm: Technomagic Shield | Closed Fist: Mystic Lightning</p>
+          
+          <button id="enableWebcamButton" class="btn primary">
+            <span>ENGAGE MAGITEK</span>
+          </button>
+        </div>
+      </main>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
